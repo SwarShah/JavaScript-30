@@ -1,0 +1,33 @@
+$bg-color: #1D1E20;
+
+body{
+  background-color: $bg-color;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 8px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+}
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: right;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.59, -0.21, 0.46, 1.35);
+}
