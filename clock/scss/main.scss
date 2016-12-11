@@ -1,4 +1,7 @@
 $bg-color: #1D1E20;
+$second-hand-color: #D43223;
+$min-hand-color: white;
+$hour-hand-color: white;
 
 body{
   background-color: $bg-color;
@@ -22,11 +25,25 @@ body{
 }
 
 .hand {
-  width: 50%;
-  height: 5px;
-  background: white;
   position: absolute;
   top: 50%;
   transform-origin: right;
   transform: rotate(90deg);
+  &.second-hand{
+    background: $second-hand-color;
+    height: 2px;
+    width: 50%;
+  }
+  &.min-hand{
+    background: $min-hand-color;
+    height: 3.5px;
+    width: 45%;
+    left: 5%;
+  }
+  &.hour-hand{
+    background: $hour-hand-color;
+    height: 6px;
+    width: 35%;
+    left: 15%;
+  }
 }

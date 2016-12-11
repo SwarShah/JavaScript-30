@@ -18,12 +18,23 @@ body {
   /* account for the height of the clock hands */ }
 
 .hand {
-  width: 50%;
-  height: 5px;
-  background: white;
   position: absolute;
   top: 50%;
   transform-origin: right;
   transform: rotate(90deg); }
+  .hand.second-hand {
+    background: #D43223;
+    height: 2px;
+    width: 50%; }
+  .hand.min-hand {
+    background: white;
+    height: 3.5px;
+    width: 45%;
+    left: 5%; }
+  .hand.hour-hand {
+    background: white;
+    height: 6px;
+    width: 35%;
+    left: 15%; }
 
 /*# sourceMappingURL=main.css.map */
